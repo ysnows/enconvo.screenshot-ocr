@@ -1,5 +1,11 @@
 {
   "identifier": "enconvo.screenshot-ocr",
   "versions": [
+    {
+      "version": "0.0.4",
+      "desc": "1. update sdk",
+      "url": "https://github.com/ysnows/enconvo.screenshot-ocr/releases/download/v0.0.4/enconvo.screenshot-ocr.enconvoplugin",
+      "minAppVersion": "1.2.1"
+    }
   ]
 }
