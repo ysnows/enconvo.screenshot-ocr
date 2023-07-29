@@ -12,9 +12,7 @@
     "format": "prettier --write \"**/*.ts\"",
     "format:check": "prettier --list-different \"**/*.ts\"",
     "build": "node build.js",
-    "deploy": "npm run build &&  cp -r dist/* ~/Library/Application\\ Support/Enconvo/extension/enconvo.screenshot-ocr",
-    "publish": "webpack && mv dist enconvo.screenshot-ocr && zip -r enconvo.screenshot-ocr.zip enconvo.screenshot-ocr && rm -rf enconvo.screenshot-ocr",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "npm run build &&  cp -r dist/* ~/Library/Application\\ Support/Enconvo/extension/enconvo.screenshot-ocr"
   },
   "repository": {
     "type": "git",
@@ -49,9 +47,11 @@
     "eslint-plugin-prettier": "^4.2.1",
     "esmify": "^2.1.1",
     "prettier": "^2.8.3",
+    "simple-git": "^3.19.1",
     "tinyify": "^4.0.0",
     "tsup": "^7.1.0",
     "tsx": "^3.12.3",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "yaml": "^2.3.1"
   }
 }
