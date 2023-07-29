@@ -27,9 +27,6 @@
   "sideEffects": [
     "*.js"
   ],
-  "dependencies": {
-    "enconvo": "^1.4.3"
-  },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
@@ -53,5 +50,8 @@
     "tsx": "^3.12.3",
     "typescript": "^5.0.4",
     "yaml": "^2.3.1"
+  },
+  "dependencies": {
+    "enconvo": "^1.5.5"
   }
 }

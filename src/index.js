@@ -1,16 +1,14 @@
-import {req, res} from "enconvo/bridge";
+import {clipboard, display, ocr, req, res} from "enconvo/bridge";
 
 (async () => {
     try {
         const {options} = req.body()
 
-        console.log(JSON.stringify(options))
-
-        const result = await $OCR.screenShotOcr()
-        $display.showMainWindow("", {})
+        const result = await ocr.screenShotOcr()
+        display.showMainWindow("", {})
 
         if (options.auto_copy === "true") {
-            $clipboard.setString(result)
+            clipboard.setString(result)
         }
 
         await res.text(result);
