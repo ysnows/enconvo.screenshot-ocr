@@ -1,0 +1,59 @@
+name: ScreenShot OCR
+version: 0.0.4
+author: ysnows
+on: { }
+steps:
+  - name: ''
+    uses: javascript
+    stream: false
+    env:
+      JSFilePath:
+        type: file-path
+        value: index.js
+        sort: 0
+        messages: [ ]
+extensionId: enconvo.screenshot-ocr
+logo: ns:translate
+description: Take a screenshot and recognize the text in the image.
+async: false
+homePage: https://github.com/ysnows/enconvo.screenshot-ocr
+appCast: https://raw.githubusercontent.com/ysnows/enconvo.screenshot-ocr/main/appcast.json
+minAppVersion: 1.2.1
+flowType: plugin
+runInBackground: true
+options:
+  - title: General
+    items:
+      - identifier: Alias
+        type: text
+        title: Alias
+        defaultValue: ''
+        menuValues: [ ]
+        desc: ''
+        placeholderText: Add alias
+        textWidth: 1.6e+2
+        disable: false
+      - identifier: Hotkey
+        type: hotkey
+        title: Hotkey
+        defaultValue: 'Shift + Option + S'
+        menuValues: [ ]
+        desc: "This shortcut will open an ai conversation window from anywhere in the
+      system\n      . Make sure it is not conflicting with other global shortcuts."
+        placeholderText: Add a hotkey to global start
+        textWidth: 1.6e+2
+        disable: false
+    desc: ''
+  - title: Other
+    items:
+      - identifier: auto_copy
+        type: toggle
+        title: Auto copy OCR result
+        defaultValue: true
+        menuValues: [ ]
+        desc: ''
+        placeholderText: Add alias
+        textWidth: 1.6e+2
+        disable: false
+    desc: ''
+
