@@ -1,5 +1,5 @@
 name: ScreenShot OCR
-version: 0.0.4
+version: 0.0.6
 author: ysnows
 on: { }
 steps:
