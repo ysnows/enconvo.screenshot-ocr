@@ -2,6 +2,12 @@
   "identifier": "enconvo.screenshot-ocr",
   "versions": [
     {
+      "version": "0.0.15",
+      "desc": "Bump version to 0.0.15",
+      "url": "https://github.com/ysnows/enconvo.screenshot-ocr/releases/download/v0.0.15/enconvo.screenshot-ocr.enconvoplugin",
+      "minAppVersion": "1.2.1"
+    },
+    {
       "version": "0.0.13",
       "desc": "Bump version to 0.0.13",
       "url": "https://github.com/ysnows/enconvo.screenshot-ocr/releases/download/v0.0.13/enconvo.screenshot-ocr.enconvoplugin",
